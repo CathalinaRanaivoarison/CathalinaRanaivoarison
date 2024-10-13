@@ -11,7 +11,7 @@
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Ansible&show_owner=true&theme=cobalt)](https://github.com/CathalinaRanaivoarison/Ansible)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Ansible&show_owner=true&theme=cobalt)](https://github.com/CathalinaRanaivoarison/Terraform)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Terraform&show_owner=true&theme=cobalt)](https://github.com/CathalinaRanaivoarison/Terraform)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Kubernetes&show_owner=true&theme=cobalt)](https://github.com/CathalinaRanaivoarison/Kubernetes)
 
