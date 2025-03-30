@@ -1,4 +1,3 @@
-# Rnvsc.github.io
 ## Hello 👋
 
 - Stats ⚡
