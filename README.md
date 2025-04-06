@@ -12,8 +12,6 @@
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Jenkins&show_owner=true&theme=cobalt)](https://github.com/CathalinaRanaivoarison/Jenkins)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Gitlab_CI-CD&show_owner=true&theme=cobalt)](https://github.com/CathalinaRanaivoarison/Gitlab_CI-CD)
-
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Ansible&show_owner=true&theme=cobalt)](https://github.com/CathalinaRanaivoarison/Ansible)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Terraform&show_owner=true&theme=cobalt)](https://github.com/CathalinaRanaivoarison/Terraform)
