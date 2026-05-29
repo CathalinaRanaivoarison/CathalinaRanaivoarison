@@ -2,6 +2,8 @@
 
 ### DevOps & Cloud Engineer 🚀
 
+DevOps & Cloud Engineer focused on automation, CI/CD, Kubernetes, Terraform and AWS.
+
 ### 🛠️ Tech Stack
 
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
