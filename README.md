@@ -1,6 +1,8 @@
-## Hello 👋
+## Hello 👋 I'm Cathalina Ranaivoarison
 
 ### DevOps & Cloud Engineer 🚀
+
+### 🛠️ Tech Stack
 
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Terraform](https://img.shields.io/badge/-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
@@ -20,6 +22,23 @@
 - [Jenkins](https://github.com/CathalinaRanaivoarison/Jenkins)
 - [Ansible](https://github.com/CathalinaRanaivoarison/Ansible)
 - [Terraform](https://github.com/CathalinaRanaivoarison/Terraform)
+
+  ---
+
+## 📫 Contact
+
+📧 cathalinaranaivoarison@gmail.com
+
+💼 LinkedIn: www.linkedin.com/in/cathalina-ranaivoarison
+
+📍 Paris, France
+
+---
+
+## ⚡ Fun Fact
+
+I enjoy building automated cloud infrastructures and transforming manual operations into reliable CI/CD pipelines.
+
 
 ### Stats ⚡
 ![GitHub Streak](https://streak-stats.demolab.com?user=CathalinaRanaivoarison&theme=tokyonight)
