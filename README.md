@@ -14,6 +14,7 @@
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Shell](https://img.shields.io/badge/-Shell-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 
+---
 
 ### Repositories 🔭
 
@@ -23,13 +24,13 @@
 - [Ansible](https://github.com/CathalinaRanaivoarison/Ansible)
 - [Terraform](https://github.com/CathalinaRanaivoarison/Terraform)
 
-  ---
+---
 
 ## 📫 Contact
 
 📧 cathalinaranaivoarison@gmail.com
 
-💼 LinkedIn: www.linkedin.com/in/cathalina-ranaivoarison
+💼 LinkedIn: www.linkedin.com/in/cathalina-ranaivoarison-ingenieur-devops-cloud-cdi-paris
 
 📍 Paris, France
 
@@ -39,7 +40,7 @@
 
 I enjoy building automated cloud infrastructures and transforming manual operations into reliable CI/CD pipelines.
 
-
+---
 ### Stats ⚡
 ![GitHub Streak](https://streak-stats.demolab.com?user=CathalinaRanaivoarison&theme=tokyonight)
 
