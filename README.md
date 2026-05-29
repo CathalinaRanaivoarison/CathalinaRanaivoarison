@@ -23,7 +23,6 @@
 ### Stats ⚡
 
 ![Vos stats GitHub](https://github-readme-stats.vercel.app/api?username=CathalinaRanaivoarison&bg_color=30,e96443,904e95&title_color=ffffff&text_color=ffffff&show_icons=true&icon_color=ffffff)
-![Stats](https://github-readme-stats.vercel.app/api?username=CathalinaRanaivoarison&show_icons=true)
 
 
 
