@@ -35,6 +35,7 @@
 ### Stats ⚡
 
 ![Vos stats GitHub](https://github-readme-stats.vercel.app/api?username=CathalinaRanaivoarison&show_icons=true&bg_color=30,e96443,904e95&title_color=ffffff&text_color=ffffff&icon_color=ffffff)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=CathalinaRanaivoarison&show_icons=true&theme=tokyonight)
 
 ### Repos 🔭
 
