@@ -18,6 +18,41 @@ DevOps & Cloud Engineer focused on automation, CI/CD, Kubernetes, Terraform and 
 
 ---
 
+## 🚀 Featured Projects
+
+### Migration Strapi Production (OVH)
+
+**Production migration of a Strapi/PostgreSQL platform from O2Switch to OVH VPS**
+
+- Docker & Docker Compose deployment
+- PostgreSQL backup and restoration
+- Nginx reverse proxy
+- HTTPS with Let's Encrypt
+- DNS migration and validation
+- Strapi media migration
+- Production & staging environments
+- Mobile application validation (React Native)
+
+**Tech Stack:** Docker, PostgreSQL, Strapi, Nginx, Linux, Git, DNS
+
+---
+
+### Kubernetes CI/CD Platform
+
+Deployment of containerized applications using Kubernetes, Jenkins and Docker.
+
+**Tech Stack:** Kubernetes, Jenkins, Docker, GitHub Actions
+
+---
+
+### Infrastructure Automation
+
+Automation of cloud infrastructure provisioning and configuration.
+
+**Tech Stack:** Terraform, Ansible, AWS
+
+---
+
 ### Repositories 🔭
 
 - [Docker](https://github.com/CathalinaRanaivoarison/Docker)
