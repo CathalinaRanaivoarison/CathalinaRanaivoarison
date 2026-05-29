@@ -2,7 +2,8 @@
 
 - Stats ⚡
 
-![Vos stats GitHub](https://github-readme-stats.vercel.app/api?username=CathalinaRanaivoarison&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&show_icons=true&icon_color=ffff)
+![Vos stats GitHub](https://github-readme-stats.vercel.app/api?username=CathalinaRanaivoarison&bg_color=30,e96443,904e95&title_color=ffffff&text_color=ffffff&show_icons=true&icon_color=ffffff)
+![Stats](https://github-readme-stats.vercel.app/api?username=CathalinaRanaivoarison&show_icons=true)
 
 - Repos 🔭
 
@@ -30,20 +31,19 @@
 ![CI/CD](https://img.shields.io/badge/-CI%2FCD-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
 
-## Hello 👋
+### DevOps & Cloud Engineer 🚀
 
-### Stats ⚡
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=CathalinaRanaivoarison&show_icons=true&theme=tokyonight&cache_seconds=1800)
+### Repositories 🔭
 
-### Repos 🔭
-
-[![Docker](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Docker&theme=tokyonight&cache_seconds=1800)](https://github.com/CathalinaRanaivoarison/Docker)
-
-[![Kubernetes](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Kubernetes&theme=tokyonight&cache_seconds=1800)](https://github.com/CathalinaRanaivoarison/Kubernetes)
-
-[![Jenkins](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Jenkins&theme=tokyonight&cache_seconds=1800)](https://github.com/CathalinaRanaivoarison/Jenkins)
-
-[![Ansible](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Ansible&theme=tokyonight&cache_seconds=1800)](https://github.com/CathalinaRanaivoarison/Ansible)
-
-[![Terraform](https://github-readme-stats.vercel.app/api/pin/?username=CathalinaRanaivoarison&repo=Terraform&theme=tokyonight&cache_seconds=1800)](https://github.com/CathalinaRanaivoarison/Terraform)
+- [Docker](https://github.com/CathalinaRanaivoarison/Docker)
+- [Kubernetes](https://github.com/CathalinaRanaivoarison/Kubernetes)
+- [Jenkins](https://github.com/CathalinaRanaivoarison/Jenkins)
+- [Ansible](https://github.com/CathalinaRanaivoarison/Ansible)
+- [Terraform](https://github.com/CathalinaRanaivoarison/Terraform)
