@@ -7,7 +7,7 @@ DevOps & Cloud Engineer focused on automation, CI/CD, Kubernetes, Terraform and 
 ### 🛠️ Tech Stack
 
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Terraform ](https://img.shields.io/badge/-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![Ansible](https://img.shields.io/badge/-Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
 ![GitLab](https://img.shields.io/badge/-GitLab-FCA121?style=flat-square&logo=gitlab&logoColor=white)
@@ -78,6 +78,10 @@ Automation of cloud infrastructure provisioning and configuration.
 ## ⚡ Fun Fact
 
 I enjoy building automated cloud infrastructures and transforming manual operations into reliable CI/CD pipelines.
+
+---
+
+![Profile Views](https://komarev.com/ghpvc/?username=CathalinaRanaivoarison)
 
 
 
