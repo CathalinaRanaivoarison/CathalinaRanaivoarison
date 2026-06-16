@@ -20,6 +20,23 @@ DevOps & Cloud Engineer focused on automation, CI/CD, Kubernetes, Terraform and 
 
 ## 🚀 Featured Projects
 
+### Eiko – Citizen Engagement Mobile Application (40,000 users)
+
+Migration and operation of a production Strapi/PostgreSQL platform hosted on OVH Cloud.
+
+#### Achievements
+
+- Migrated production workloads from O2Switch to OVH VPS
+- Deployed and operated Production and Staging environments using Docker Compose
+- Secured PostgreSQL access through SSH tunnels and role-based access control
+- Implemented observability with Prometheus and Grafana
+- Automated deployment and operational workflows
+- Created technical documentation and operational procedures
+
+#### Tech Stack
+
+Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
+
 ### Migration Strapi Production (OVH)
 
 **Production migration of a Strapi/PostgreSQL platform from O2Switch to OVH VPS**
@@ -77,11 +94,7 @@ Automation of cloud infrastructure provisioning and configuration.
 
 I enjoy building automated cloud infrastructures and transforming manual operations into reliable CI/CD pipelines.
 
----
-### Stats ⚡
-![GitHub Streak](https://streak-stats.demolab.com?user=CathalinaRanaivoarison&theme=tokyonight)
 
-<!-- ![Vos stats GitHub](https://github-readme-stats.vercel.app/api?username=CathalinaRanaivoarison&bg_color=30,e96443,904e95&title_color=ffffff&text_color=ffffff&show_icons=true&icon_color=ffffff)-->
 
 
 
