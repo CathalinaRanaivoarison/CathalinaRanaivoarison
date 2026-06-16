@@ -92,6 +92,8 @@ Automation of cloud infrastructure provisioning and configuration.
 📧 cathalinaranaivoarison@gmail.com
 
 💼 LinkedIn: www.linkedin.com/in/cathalina-ranaivoarison-ingenieur-devops-cloud-cdi-paris
+💼 [LinkedIn](https://www.linkedin.com/in/cathalina-ranaivoarison-ingenieur-devops-cloud-cdi-paris)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Cathalina%20Ranaivoarison-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cathalina-ranaivoarison-ingenieur-devops-cloud-cdi-paris)
 
 📍 Paris, France
 
