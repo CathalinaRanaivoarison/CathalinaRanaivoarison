@@ -1,8 +1,12 @@
 ## Hello 👋 I'm Cathalina Ranaivoarison
 
+![Profile Views](https://komarev.com/ghpvc/?username=CathalinaRanaivoarison)
+![GitHub followers](https://img.shields.io/github/followers/CathalinaRanaivoarison?style=social)
+
 ### DevOps & Cloud Engineer 🚀
 
-DevOps & Cloud Engineer focused on automation, CI/CD, Kubernetes, Terraform and AWS.
+DevOps & Cloud Engineer specializing in infrastructure automation, CI/CD, Kubernetes, Terraform and AWS.
+Passionate about building scalable cloud platforms, automating deployments and improving system reliability through DevOps practices.
 
 ### 🛠️ Tech Stack
 
@@ -18,7 +22,7 @@ DevOps & Cloud Engineer focused on automation, CI/CD, Kubernetes, Terraform and 
 
 ---
 
-## 🚀 Featured Projects
+## 💻 Featured Projects
 
 ### Eiko – Citizen Engagement Mobile Application (40,000 users)
 
@@ -36,6 +40,16 @@ Migration and operation of a production Strapi/PostgreSQL platform hosted on OVH
 #### Tech Stack
 
 Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
+
+---
+
+## 💼 Professional Highlights
+
+- Automated infrastructure management for 3,000+ servers using Ansible
+- Built and optimized CI/CD pipelines with GitLab CI and Jenkins
+- Deployed and operated containerized workloads with Docker and Kubernetes
+- Implemented monitoring solutions with Grafana, Prometheus and Zabbix
+- Automated cloud infrastructure provisioning with Terraform and AWS
 
 ---
 
@@ -84,6 +98,7 @@ I enjoy building automated cloud infrastructures and transforming manual operati
 
 - AWS Certified DevOps Engineer – Professional (in progress)
 - Certified Kubernetes Administrator (CKA) (in progress)
+
 
 
 
