@@ -90,7 +90,9 @@ Automation of cloud infrastructure provisioning and configuration.
 ## 📫 Contact
 
 📧 cathalinaranaivoarison@gmail.com
+
 💼 [LinkedIn](https://www.linkedin.com/in/cathalina-ranaivoarison-ingenieur-devops-cloud-cdi-paris)
+
 📍 Paris, France
 
 ---
