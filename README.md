@@ -80,8 +80,12 @@ Automation of cloud infrastructure provisioning and configuration.
 I enjoy building automated cloud infrastructures and transforming manual operations into reliable CI/CD pipelines.
 
 ---
+## 🎓 Certifications & Learning
 
-![Profile Views](https://komarev.com/ghpvc/?username=CathalinaRanaivoarison)
+- AWS Certified DevOps Engineer – Professional (in progress)
+- Certified Kubernetes Administrator (CKA) (in progress)
+
+
 
 
 
