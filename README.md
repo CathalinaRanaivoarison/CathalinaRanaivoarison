@@ -6,6 +6,7 @@
 ### DevOps & Cloud Engineer 🚀
 
 DevOps & Cloud Engineer specializing in infrastructure automation, CI/CD, Kubernetes, Terraform and AWS.
+
 Passionate about building scalable cloud platforms, automating deployments and improving system reliability through DevOps practices.
 
 ### 🛠️ Tech Stack
@@ -78,6 +79,12 @@ Automation of cloud infrastructure provisioning and configuration.
 - [Terraform](https://github.com/CathalinaRanaivoarison/Terraform)
 
 ---
+## 🎓 Certifications & Learning
+
+- AWS Certified DevOps Engineer – Professional (in progress)
+- Certified Kubernetes Administrator (CKA) (in progress)
+
+---
 
 ## 📫 Contact
 
@@ -93,11 +100,7 @@ Automation of cloud infrastructure provisioning and configuration.
 
 I enjoy building automated cloud infrastructures and transforming manual operations into reliable CI/CD pipelines.
 
----
-## 🎓 Certifications & Learning
 
-- AWS Certified DevOps Engineer – Professional (in progress)
-- Certified Kubernetes Administrator (CKA) (in progress)
 
 
 
