@@ -26,9 +26,9 @@ Passionate about building scalable cloud platforms, automating deployments and i
 
 ## 💻 Featured Projects
 
-### Eiko – Citizen Engagement Mobile Application (40,000 users)
+### Eiko – Citizen Engagement Platform (40,000+ Users)
 
-Migration and operation of a production Strapi/PostgreSQL platform hosted on OVH Cloud.
+Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH Cloud.
 
 #### Achievements
 
