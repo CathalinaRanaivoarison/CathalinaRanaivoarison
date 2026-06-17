@@ -71,11 +71,11 @@ Automation of cloud infrastructure provisioning and configuration.
 
 ### Repositories 🔭
 
-- [Docker](https://github.com/CathalinaRanaivoarison/Docker)
-- [Kubernetes](https://github.com/CathalinaRanaivoarison/Kubernetes)
-- [Jenkins](https://github.com/CathalinaRanaivoarison/Jenkins)
-- [Ansible](https://github.com/CathalinaRanaivoarison/Ansible)
-- [Terraform](https://github.com/CathalinaRanaivoarison/Terraform)
+- [ocker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
+- [Kubernetes Projects](https://github.com/CathalinaRanaivoarison/Kubernetes)
+- [Jenkins CI/CD Pipelines](https://github.com/CathalinaRanaivoarison/Jenkins)
+- [Ansible Automation](https://github.com/CathalinaRanaivoarison/Ansible)
+- [Terraform AWS Infrastructure](https://github.com/CathalinaRanaivoarison/Terraform)
 
 ---
 ## 🎓 Certifications & Learning
