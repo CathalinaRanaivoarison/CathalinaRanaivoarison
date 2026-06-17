@@ -71,7 +71,7 @@ Automation of cloud infrastructure provisioning and configuration.
 
 ### Repositories 🔭
 
-- [ocker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
+- [Docker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
 - [Kubernetes Projects](https://github.com/CathalinaRanaivoarison/Kubernetes)
 - [Jenkins CI/CD Pipelines](https://github.com/CathalinaRanaivoarison/Jenkins)
 - [Ansible Automation](https://github.com/CathalinaRanaivoarison/Ansible)
