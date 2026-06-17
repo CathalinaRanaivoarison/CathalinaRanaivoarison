@@ -39,9 +39,7 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 - Automated deployment and operational workflows
 - Created technical documentation and operational procedures
 
-#### Tech Stack
-
-Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
+**Tech Stack:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
 ---
 
