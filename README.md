@@ -63,7 +63,7 @@ L'objectif de ce projet a été de concevoir, migrer et automatiser une infrastr
 **Tech Stack du projet:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
 ---
-# 💻 Projet 2
+# 💻 Projet 2 [IC_Project](https://github.com/CathalinaRanaivoarison/IC_Project)
 
 ## IC GROUP – Architecture CI/CD & Infrastructure Code Multi-Serveurs 
 
@@ -103,7 +103,7 @@ L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS
 
 ## Repositories 🔭
 
-- [IC_Project](https://github.com/CathalinaRanaivoarison/IC_Project/tree/main/terraform)
+- [IC_Project](https://github.com/CathalinaRanaivoarison/IC_Project)
 - [Docker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
 - [Kubernetes Projects](https://github.com/CathalinaRanaivoarison/Kubernetes)
 - [Jenkins CI/CD Pipelines](https://github.com/CathalinaRanaivoarison/Jenkins)
