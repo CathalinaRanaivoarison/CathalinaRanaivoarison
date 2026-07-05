@@ -34,13 +34,6 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 
 #### Achievements
 
-- Migrated production workloads from O2Switch to OVH VPS
-- Deployed and operated Production and Staging environments using Docker Compose
-- Secured PostgreSQL access through SSH tunnels and role-based access control
-- Implemented observability with Prometheus and Grafana
-- Automated deployment and operational workflows CI/CD 
-- Created technical documentation and operational procedures
-
 - **Migration sans interruption (Zero-Downtime) :** Migration réussie des charges de travail de production critiques d'un hébergement mutualisé historique (O2Switch) vers un VPS dédié OVH Cloud, sans aucune coupure pour les utilisateurs actifs de l'application mobile.
 - **Conteneurisation et Isolation :** Conception, déploiement et isolation complète des environnements de Production et de Staging via Docker Compose et un reverse proxy Nginx sécurisé (certificats SSL automatisés Let's Encrypt).
 - **Automatisation & CI/CD :** Conception et mise en œuvre de pipelines d'intégration et de déploiement continus (CI/CD) pour automatiser les flux de travail opérationnels, les déploiements de l'API et la gestion des builds.
