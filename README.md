@@ -22,7 +22,7 @@ Passionné par la conception de plateformes cloud scalables, l'automatisation de
 
 ---
 
-# 💻 Projets 1
+# 💻 Projet 1
 
 ## Eiko – Citizen Engagement Platform (40,000+ Users)
 
@@ -59,7 +59,7 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 **Tech Stack du projet:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
 ---
-# 💻 Projets 2
+# 💻 Projet 2
 
 ## IC GROUP – Architecture CI/CD & Infrastructure Code Multi-Serveurs 
 
@@ -123,7 +123,7 @@ L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS
 
 ---
 
-## ⚡ Fun Fact
+##  Fun Fact
 
 I enjoy building automated cloud infrastructures and transforming manual operations into reliable CI/CD pipelines.
 
