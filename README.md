@@ -24,7 +24,7 @@ Passionné par la conception de plateformes cloud scalables, l'automatisation de
 
 ## 💻 Projets
 
-#### Eiko – Citizen Engagement Platform (40,000+ Users)
+## Eiko – Citizen Engagement Platform (40,000+ Users)
 
 ## Présentation du Projet
 
@@ -59,7 +59,7 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 **Tech Stack du projet:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
 ---
-#### Pipeline CI/CD & Infrastructure as Code - IC GROUP
+## Pipeline CI/CD & Infrastructure as Code - IC GROUP
 
 ## Presentation du Projet
 
