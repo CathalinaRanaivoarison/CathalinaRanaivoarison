@@ -1,6 +1,5 @@
 ## Hello 👋 I'm Cathalina Ranaivoarison
 
-![Profile Views](https://komarev.com/ghpvc/?username=CathalinaRanaivoarison)
 ![GitHub followers](https://img.shields.io/github/followers/CathalinaRanaivoarison?style=social)
 
 ### DevOps & Cloud Engineer 🚀
@@ -43,7 +42,7 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 
 
 ---
-🖼️ [INSÈRE ICI TON SCHÉMA GRAPHIQUE EXCALIDRAW AVEC LES DEUX SERVEURS ET LES TUNNELS]
+![Schéma d'Architecture](architecture.png)
 ---
 
 ## Problématiques & Défis Techniques
