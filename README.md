@@ -22,7 +22,7 @@ Passionné par la conception de plateformes cloud scalables, l'automatisation de
 
 ---
 
-## 💻 Projets
+# 💻 Projets 1
 
 ## Eiko – Citizen Engagement Platform (40,000+ Users)
 
@@ -59,7 +59,7 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 **Tech Stack du projet:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
 ---
-# 💻 Projets
+# 💻 Projets 2
 
 ## IC GROUP – Architecture CI/CD & Infrastructure Code Multi-Serveurs 
 
@@ -97,7 +97,7 @@ L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS
 
 ---
 
-### Repositories 🔭
+## Repositories 🔭
 
 - [Docker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
 - [Kubernetes Projects](https://github.com/CathalinaRanaivoarison/Kubernetes)
@@ -106,7 +106,7 @@ L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS
 - [Terraform AWS Infrastructure](https://github.com/CathalinaRanaivoarison/Terraform)
 
 ---
-## 🎓 Certifications & Learning
+## 🎓 Certificat
 
 - AWS Certified DevOps Engineer – Professional (in progress)
 - Certified Kubernetes Administrator (CKA) (in progress)
