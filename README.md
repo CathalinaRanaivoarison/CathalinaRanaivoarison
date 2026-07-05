@@ -23,7 +23,7 @@ Passionate about building scalable cloud platforms, automating deployments and i
 
 ---
 
-## 💻 Projects 
+## 💻 Projets
 
 ### Eiko – Citizen Engagement Platform (40,000+ Users)
 
@@ -39,12 +39,10 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 - **Sécurisation des accès Data :** Mise en place d'un accès sécurisé par tunnels SSH (authentification par clés Ed25519/RSA sans mot de passe) combiné à un contrôle d'accès basé sur les rôles (RBAC) PostgreSQL pour fournir à l'équipe Data un accès strict en lecture seule au niveau des tables.
 - **Observabilité et Supervision :** Configuration d'une stack Prometheus et Grafana pour le suivi des métriques système en temps réel et la création de dashboards de performance.
 - **Excellence Opérationnelle :** Rédaction de la documentation technique de référence, automatisation des sauvegardes (dumps DB) et définition des procédures opérationnelles de reprise sur sinistre (rollback).
-  
----
+
 ## Architecture
 
 ![Schéma d'Architecture](Architecture.png)
----
 
 ## Problématiques & Défis Techniques
 
@@ -60,7 +58,6 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 *   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur en temps réel.
 
 **Tech Stack:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
-
 ---
 
 ## 💼 Professional Highlights
