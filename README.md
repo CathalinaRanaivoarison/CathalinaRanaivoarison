@@ -24,7 +24,7 @@ Passionné par la conception de plateformes cloud scalables, l'automatisation de
 
 ## 💻 Projets
 
-### Eiko – Citizen Engagement Platform (40,000+ Users)
+#### Eiko – Citizen Engagement Platform (40,000+ Users)
 
 ## Présentation du Projet
 
@@ -57,6 +57,21 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 *   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur en temps réel.
 
 **Tech Stack du projet:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
+
+---
+#### Pipeline CI/CD & Infrastructure as Code - IC GROUP
+
+## Presentation du Projet
+
+La société **IC GROUP** a mis en place un site web vitrine (développé en Python/Flask) permettant d'accéder à ses deux applications phares :
+1. **Odoo 13.0 (Communautaire)** : Intégrant un système de LMS pour la diffusion des formations internes.
+2. **pgAdmin4** : Pour l'administration graphique de la base de données PostgreSQL d'Odoo.
+
+### Architecture Cible
+Pour répondre aux contraintes de performances et d'isolation, l'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS (compatibles avec l'offre gratuite AWS Free Tier) :
+* **Serveur 1 (t2.medium)** : Dédié à l'orchestration CI/CD avec **Jenkins**.
+* **Serveur 2 (t2.micro)** : Héberge l'application web **Site Vitrine** (port 8080) et **pgAdmin4** (port 5050).
+* **Serveur 3 (t2.micro)** : Héberge l'application **Odoo 13.0** et sa base de données **PostgreSQL** (port 8069).
 
 ---
 
