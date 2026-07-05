@@ -26,11 +26,11 @@ Passionné par la conception de plateformes cloud scalables, l'automatisation de
 
 ## Eiko – Citizen Engagement Platform (40,000+ Users)
 
-## Présentation du Projet
+### Présentation du Projet
 
 Migration d'infrastructure mobile : transition d'un hébergement mutualisé historique (O2Switch) vers une architecture Cloud conteneurisée sur VPS OVH.
 
-## Réalisations
+### Réalisations
 
 - **Migration sans interruption (Zero-Downtime) :** Migration des charges de travail backend depuis un hébergement mutualisé (O2Switch) vers un VPS dédié OVH, opérée sans aucune coupure de l'API ni dégradation de l'expérience utilisateur sur mobile.
 - **Conteneurisation et Isolation :** Conception, déploiement et isolation complète des environnements de Production et de Staging via Docker Compose et un reverse proxy Nginx sécurisé (certificats SSL automatisés Let's Encrypt).
@@ -39,17 +39,17 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 - **Observabilité et Supervision :** Configuration d'une stack Prometheus et Grafana pour le suivi des métriques système en temps réel et la création de dashboards de performance.
 - **Excellence Opérationnelle :** Rédaction de la documentation technique de référence, automatisation des sauvegardes (dumps DB) et définition des procédures opérationnelles de reprise sur sinistre (rollback).
 
-## Architecture
+### Architecture
 
 ![Schéma d'Architecture](Architecture.png)
 
-## Problématiques & Défis Techniques
+### Problématiques & Défis Techniques
 
 *   **Limitation technique :** L'hébergement mutualisé initial limitait la scalabilité et ne permettait pas une isolation propre des environnements.
 *   **Sécurité des données :** L'équipe Data avait besoin d'un accès direct à la base de données pour leurs outils d'analyse (ex: BigQuery) sans pour autant exposer les ports PostgreSQL publiquement sur Internet.
 *   **Continuité d'activité :** Assurer le routage pour l'application mobile tout en maintenant temporairement les e-mails et le site vitrine sur l'ancien hébergeur.(Migration total à venir)
 
-## Métriques & Impact Business
+### Métriques & Impact Business
 
 *   **100% de disponibilité (Zero-Downtime) :** Aucune coupure constatée pour les utilisateurs lors de la bascule de l'API.
 *   **Déploiements accélérés et fiabilisés :** L'intégration du pipeline CI/CD sécurise les mises à jour et réduit drastiquement le droit à l'erreur humaine en production.
@@ -59,19 +59,41 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 **Tech Stack du projet:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
 ---
-## Pipeline CI/CD & Infrastructure as Code - IC GROUP
+# 💻 Projets
 
-## Presentation du Projet
+## IC GROUP – Architecture CI/CD & Infrastructure Infrastructure as Code Multi-Serveurs 
 
+### Présentation du Projet
 La société **IC GROUP** a mis en place un site web vitrine (développé en Python/Flask) permettant d'accéder à ses deux applications phares :
 1. **Odoo 13.0 (Communautaire)** : Intégrant un système de LMS pour la diffusion des formations internes.
 2. **pgAdmin4** : Pour l'administration graphique de la base de données PostgreSQL d'Odoo.
 
-### Architecture Cible
-Pour répondre aux contraintes de performances et d'isolation, l'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS (compatibles avec l'offre gratuite AWS Free Tier) :
+Conception et automatisation d'une infrastructure d'entreprise conteneurisée pour le déploiement d'un site vitrine connecté à un ERP Odoo 13 (LMS interne) et à une interface d'administration graphique pgAdmin4, répartis sur 3 serveurs distincts.
+
+### Réalisations
+* **Infrastructure as Code (IaC) :** Écriture et déploiement de scripts Terraform pour automatiser le provisionnement d'instances AWS EC2 (`t2.medium` et `t2.micro`) et la configuration dynamique des règles de pare-feu (Security Groups).
+* **Gestion de Configuration et Provisioning :** Création de playbooks Ansible pour automatiser l'installation complète de l'écosystème Docker/Docker Compose sur des instances vierges.
+* **Industrialisation par Rôles Ansible :** Modélisation de rôles Ansible hautement réutilisables (`odoo_role` et `pgadmin_role`) s'appuyant sur des templates Docker Compose configurés dynamiquement avec Jinja2 (volumes persistants, isolation réseau et services configurables).
+* **Conteneurisation et Scripting Avancé :** Optimisation d'un Dockerfile Python/Flask utilisant des variables d'environnement dynamiques extraites à la volée via des scripts Linux (`awk`) à partir d'un fichier de configuration centralisé (`releases.txt`).
+* **Pipeline CI/CD Unifié (Jenkins) :** Conception d'un pipeline complet structuré en étapes (Extraction, Multi-Build avec arguments, Tests fonctionnels automatisés via curl/inspect, Push Docker Hub et Déploiement automatique via Ansible).
+
+### Architecture
+L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS :
 * **Serveur 1 (t2.medium)** : Dédié à l'orchestration CI/CD avec **Jenkins**.
 * **Serveur 2 (t2.micro)** : Héberge l'application web **Site Vitrine** (port 8080) et **pgAdmin4** (port 5050).
 * **Serveur 3 (t2.micro)** : Héberge l'application **Odoo 13.0** et sa base de données **PostgreSQL** (port 8069).
+
+### Problématiques & Défis Techniques
+* **Isolation et Optimisation des Ressources :** Odoo et PostgreSQL étant gourmands en ressources, le défi consistait à isoler l'ERP sur un serveur dédié tout en maintenant le site vitrine et pgAdmin sur une autre instance pour garantir la haute disponibilité du site institutionnel.
+* **Dynamisation des Déploiements :** Permettre aux équipes produit de modifier les URLs de redirection ou la version de l'application sans jamais toucher au code source ou perturber la configuration réseau.
+* **Stratégie Multi-Environnement :** Assurer la portabilité totale des recettes de déploiement Ansible afin de pouvoir basculer l'infrastructure d'un environnement Cloud (AWS EC2) vers du On-Premises sans modifier la logique des rôles.
+
+### Métriques & Impact Business
+* **Automatisation à 100% (Zero-Human-Error) :** Le provisioning complet (de la machine vide à l'application fonctionnelle) s'exécute de manière idempotente sans aucune action manuelle.
+* **Livraison Continue Sécurisée :** Intégration de tests de validation (Health Checks HTTP et validation d'environnement) bloquant automatiquement le pipeline et empêchant l'application de passer en production en cas de crash.
+* **Flexibilité Commerciale :** Réduction drastique du "Time-to-Market" pour le déploiement de nouvelles versions applicatives (v1.0 à v1.1) simplement en poussant un tag textuel.
+
+**Tech Stack du projet :** AWS EC2 • Terraform • Ansible • Jenkins • Docker • Docker Compose • Python (Flask) • Odoo 13 • pgAdmin4 • Linux (Bash/Awk) • Git
 
 ---
 
