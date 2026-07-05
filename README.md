@@ -103,6 +103,7 @@ L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS
 
 ## Repositories 🔭
 
+- [IC_Project](https://github.com/CathalinaRanaivoarison/IC_Project/tree/main/terraform)
 - [Docker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
 - [Kubernetes Projects](https://github.com/CathalinaRanaivoarison/Kubernetes)
 - [Jenkins CI/CD Pipelines](https://github.com/CathalinaRanaivoarison/Jenkins)
