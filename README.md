@@ -27,7 +27,7 @@ Passionné par la conception de plateformes cloud scalables, l'automatisation de
 ## Eiko – Plateforme d'engagement citoyen (40 000+ utilisateurs)
 
 ### Présentation du Projet
-La plateforme citoyenne **Eiko** a développé une application mobile grand public conçue pour aider les familles et les colocations à adopter des éco-gestes au quotidien, accessible via son site officiel [eiko-responsable.org](https://www.eiko-responsable.org/). Cet écosystème à fort impact s'appuie sur une architecture backend robuste pour propulser ses services stratégiques :
+La plateforme citoyenne **Eiko** est une application mobile grand public conçue pour aider les familles et les colocations à adopter des éco-gestes au quotidien, accessible via son site officiel [eiko-responsable.org](https://www.eiko-responsable.org/). Cet écosystème à fort impact s'appuie sur une architecture backend robuste pour propulser ses services stratégiques :
 
 *   **Strapi CMS :** Déployé comme API Gateway et gestionnaire de contenu pour alimenter en temps réel l'application mobile auprès de plus de **40 000 utilisateurs actifs**.
 *   **PostgreSQL 15 :** Configuré comme moteur de base de données relationnelle centralisé pour stocker de manière intègre et performante les données utilisateurs ainsi que le suivi des challenges applicatifs et environnementaux.
