@@ -28,6 +28,8 @@ Passionate about building scalable cloud platforms, automating deployments and i
 
 ### Eiko – Citizen Engagement Platform (40,000+ Users)
 
+## Présentation du Projet
+
 Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH Cloud.
 
 #### Achievements
@@ -36,26 +38,24 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 - Deployed and operated Production and Staging environments using Docker Compose
 - Secured PostgreSQL access through SSH tunnels and role-based access control
 - Implemented observability with Prometheus and Grafana
-- Automated deployment and operational workflows
+- Automated deployment and operational workflows CI/CD
 - Created technical documentation and operational procedures
 
 **Tech Stack:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
-# 📱 Étude de Cas : Migration Cloud & Sécurisation d'une API Mobile (40k+ Utilisateurs)
 
-## 📌 Présentation du Projet
-Migration réussie d'une infrastructure backend d'un hébergement mutualisé historique (O2Switch) vers un environnement Cloud dédié et conteneurisé (VPS OVH). L'enjeu majeur était d'isoler les environnements de Production/Staging et de sécuriser les accès de l'équipe Data, le tout avec **zéro interruption de service** pour les utilisateurs de l'application mobile.
+**zéro interruption de service** pour les utilisateurs de l'application mobile.
 
 ---
 🖼️ [INSÈRE ICI TON SCHÉMA GRAPHIQUE EXCALIDRAW AVEC LES DEUX SERVEURS ET LES TUNNELS]
 ---
 
-## 🎯 Problématiques & Défis Techniques
+## Problématiques & Défis Techniques
 *   **Limitation technique :** L'hébergement mutualisé initial limitait la scalabilité et ne permettait pas une isolation propre des environnements.
 *   **Sécurité des données :** L'équipe Data avait besoin d'un accès direct à la base de données pour leurs outils d'analyse (ex: BigQuery) sans pour autant exposer les ports PostgreSQL publiquement sur Internet.
 *   **Continuité d'activité :** Assurer le routage pour l'application mobile tout en maintenant temporairement les e-mails et le site vitrine sur l'ancien hébergeur.
 
-## 🚀 Solutions et Architecture Implémentées
+## Solutions et Architecture Implémentées
 
 ### 1. Conteneurisation et Isolation (Docker)
 Conception d'une architecture multi-conteneurs via **Docker Compose** permettant d'isoler hermétiquement l'environnement de Production et l'environnement de Staging. Chaque environnement possède son instance PostgreSQL et son instance Strapi dédiée.
@@ -72,7 +72,7 @@ Pour ouvrir un accès sécurisé à la Data Team sans compromettre la base de do
 *   Création d'un utilisateur système dédié, restreint aux **tunnels SSH** avec authentification obligatoire par **clés de sécurité (Ed25519/RSA)**.
 *   Configuration de privilèges stricts au niveau de la base de données (**Lecture seule / RBAC**) limités aux tables strictement nécessaires à l'analyse.
 
-## 📊 Métriques & Impact Business
+## Métriques & Impact Business
 *   **100% de disponibilité (Zero-Downtime) :** Aucune coupure constatée pour les utilisateurs lors de la bascule de l'API.
 *   **Sécurité durcie :** Suppression des mots de passe pour les accès serveurs et isolation complète des bases de données.
 *   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur.
