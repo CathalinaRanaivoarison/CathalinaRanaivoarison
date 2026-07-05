@@ -58,6 +58,7 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 *   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur en temps réel.
 
 **Tech Stack:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
+
 ---
 
 ## 💼 Professional Highlights
