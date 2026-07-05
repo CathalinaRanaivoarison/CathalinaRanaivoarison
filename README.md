@@ -39,10 +39,9 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 - **Sécurisation des accès Data :** Mise en place d'un accès sécurisé par tunnels SSH (authentification par clés Ed25519/RSA sans mot de passe) combiné à un contrôle d'accès basé sur les rôles (RBAC) PostgreSQL pour fournir à l'équipe Data un accès strict en lecture seule au niveau des tables.
 - **Observabilité et Supervision :** Configuration d'une stack Prometheus et Grafana pour le suivi des métriques système en temps réel et la création de dashboards de performance.
 - **Excellence Opérationnelle :** Rédaction de la documentation technique de référence, automatisation des sauvegardes (dumps DB) et définition des procédures opérationnelles de reprise sur sinistre (rollback).
-
-
+  
 ---
-![Schéma d'Architecture](architecture.png)
+![Schéma d'Architecture](Architecture.png)
 ---
 
 ## Problématiques & Défis Techniques
