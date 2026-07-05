@@ -1,12 +1,11 @@
-## Hello 👋 I'm Cathalina Ranaivoarison
+### Cathalina Ranaivoarison
 
-![GitHub followers](https://img.shields.io/github/followers/CathalinaRanaivoarison?style=social)
 
-### DevOps & Cloud Engineer 🚀
+### Ingénieur DevOps & Cloud
 
-DevOps & Cloud Engineer specializing in infrastructure automation, CI/CD, Kubernetes, Terraform and AWS.
+Ingénieur DevOps & Cloud spécialisé dans l'automatisation d'infrastructures, la CI/CD, Kubernetes, Terraform et AWS.
 
-Passionate about building scalable cloud platforms, automating deployments and improving system reliability through DevOps practices.
+Passionné par la conception de plateformes cloud scalables, l'automatisation des déploiements et l'amélioration de la fiabilité des systèmes grâce aux pratiques DevOps.
 
 ### 🛠️ Tech Stack
 
@@ -57,7 +56,7 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 *   **Sécurité durcie :** Suppression des mots de passe pour les accès serveurs et isolation complète des bases de données.
 *   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur en temps réel.
 
-**Tech Stack:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
+**Tech Stack du projet:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
 ---
 
