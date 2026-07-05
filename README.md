@@ -23,17 +23,17 @@ Passionate about building scalable cloud platforms, automating deployments and i
 
 ---
 
-## 💻 Featured Projects
+## 💻 Projects 
 
 ### Eiko – Citizen Engagement Platform (40,000+ Users)
 
 ## Présentation du Projet
 
-Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH Cloud.
+Migration d'infrastructure mobile : transition d'un hébergement mutualisé historique (O2Switch) vers une architecture Cloud conteneurisée sur VPS OVH.
 
-#### Achievements
+## Réalisations
 
-- **Migration sans interruption (Zero-Downtime) :** Migration réussie des charges de travail de production critiques d'un hébergement mutualisé historique (O2Switch) vers un VPS dédié OVH Cloud, sans aucune coupure pour les utilisateurs actifs de l'application mobile.
+- **Migration sans interruption (Zero-Downtime) :** Migration des charges de travail backend depuis un hébergement mutualisé (O2Switch) vers un VPS dédié OVH, opérée sans aucune coupure de l'API ni dégradation de l'expérience utilisateur sur mobile.
 - **Conteneurisation et Isolation :** Conception, déploiement et isolation complète des environnements de Production et de Staging via Docker Compose et un reverse proxy Nginx sécurisé (certificats SSL automatisés Let's Encrypt).
 - **Automatisation & CI/CD :** Conception et mise en œuvre de pipelines d'intégration et de déploiement continus (CI/CD) pour automatiser les flux de travail opérationnels, les déploiements de l'API et la gestion des builds.
 - **Sécurisation des accès Data :** Mise en place d'un accès sécurisé par tunnels SSH (authentification par clés Ed25519/RSA sans mot de passe) combiné à un contrôle d'accès basé sur les rôles (RBAC) PostgreSQL pour fournir à l'équipe Data un accès strict en lecture seule au niveau des tables.
@@ -41,15 +41,19 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 - **Excellence Opérationnelle :** Rédaction de la documentation technique de référence, automatisation des sauvegardes (dumps DB) et définition des procédures opérationnelles de reprise sur sinistre (rollback).
   
 ---
+## Architecture
+
 ![Schéma d'Architecture](Architecture.png)
 ---
 
 ## Problématiques & Défis Techniques
+
 *   **Limitation technique :** L'hébergement mutualisé initial limitait la scalabilité et ne permettait pas une isolation propre des environnements.
 *   **Sécurité des données :** L'équipe Data avait besoin d'un accès direct à la base de données pour leurs outils d'analyse (ex: BigQuery) sans pour autant exposer les ports PostgreSQL publiquement sur Internet.
 *   **Continuité d'activité :** Assurer le routage pour l'application mobile tout en maintenant temporairement les e-mails et le site vitrine sur l'ancien hébergeur.(Migration total à venir)
 
 ## Métriques & Impact Business
+
 *   **100% de disponibilité (Zero-Downtime) :** Aucune coupure constatée pour les utilisateurs lors de la bascule de l'API.
 *   **Déploiements accélérés et fiabilisés :** L'intégration du pipeline CI/CD sécurise les mises à jour et réduit drastiquement le droit à l'erreur humaine en production.
 *   **Sécurité durcie :** Suppression des mots de passe pour les accès serveurs et isolation complète des bases de données.
