@@ -24,11 +24,15 @@ Passionné par la conception de plateformes cloud scalables, l'automatisation de
 
 # 💻 Projet 1
 
-## Eiko – Citizen Engagement Platform (40,000+ Users)
+## Eiko – Plateforme d'engagement citoyen (40 000+ utilisateurs)
 
 ### Présentation du Projet
+La plateforme citoyenne **Eiko** a développé une application mobile grand public conçue pour aider les familles et les colocations à adopter des éco-gestes au quotidien, accessible via son site officiel [eiko-responsable.org](https://www.eiko-responsable.org/). Cet écosystème à fort impact s'appuie sur une architecture backend robuste pour propulser ses services stratégiques :
 
-Migration d'infrastructure mobile : transition d'un hébergement mutualisé historique (O2Switch) vers une architecture Cloud conteneurisée sur VPS OVH.
+*   **Strapi CMS :** Déployé comme API Gateway et gestionnaire de contenu pour alimenter en temps réel l'application mobile auprès de plus de **40 000 utilisateurs actifs**.
+*   **PostgreSQL 15 :** Configuré comme moteur de base de données relationnelle centralisé pour stocker de manière intègre et performante les données utilisateurs ainsi que le suivi des challenges applicatifs et environnementaux.
+
+L'objectif de ce projet a été de concevoir, migrer et automatiser une infrastructure d'entreprise conteneurisée hautement disponible. Afin de s'affranchir des limitations techniques d'un hébergement mutualisé historique (**O2Switch**), la solution a été entièrement orchestrée et isolée sur un environnement Cloud dédié (**VPS OVH**). L'enjeu majeur résidait dans le cloisonnement strict des environnements de Production et de Staging ainsi que dans la sécurisation des flux de l'équipe Data, le tout opéré de manière transparente avec **zéro interruption de service** (*Zero-Downtime*) pour les utilisateurs mobiles engagés dans la transition écologique.
 
 ### Réalisations
 
