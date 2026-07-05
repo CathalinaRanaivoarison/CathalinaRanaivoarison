@@ -38,8 +38,15 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 - Deployed and operated Production and Staging environments using Docker Compose
 - Secured PostgreSQL access through SSH tunnels and role-based access control
 - Implemented observability with Prometheus and Grafana
-- Automated deployment and operational workflows CI/CD
+- Automated deployment and operational workflows CI/CD 
 - Created technical documentation and operational procedures
+
+- **Migration sans interruption (Zero-Downtime) :** Migration réussie des charges de travail de production critiques d'un hébergement mutualisé historique (O2Switch) vers un VPS dédié OVH Cloud, sans aucune coupure pour les utilisateurs actifs de l'application mobile.
+- **Conteneurisation et Isolation :** Conception, déploiement et isolation complète des environnements de Production et de Staging via Docker Compose et un reverse proxy Nginx sécurisé (certificats SSL automatisés Let's Encrypt).
+- **Automatisation & CI/CD :** Conception et mise en œuvre de pipelines d'intégration et de déploiement continus (CI/CD) pour automatiser les flux de travail opérationnels, les déploiements de l'API et la gestion des builds.
+- **Sécurisation des accès Data :** Mise en place d'un accès sécurisé par tunnels SSH (authentification par clés Ed25519/RSA sans mot de passe) combiné à un contrôle d'accès basé sur les rôles (RBAC) PostgreSQL pour fournir à l'équipe Data un accès strict en lecture seule au niveau des tables.
+- **Observabilité et Supervision :** Configuration d'une stack Prometheus et Grafana pour le suivi des métriques système en temps réel et la création de dashboards de performance.
+- **Excellence Opérationnelle :** Rédaction de la documentation technique de référence, automatisation des sauvegardes (dumps DB) et définition des procédures opérationnelles de reprise sur sinistre (rollback).
 
 **Tech Stack:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
@@ -54,8 +61,9 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 
 ## Métriques & Impact Business
 *   **100% de disponibilité (Zero-Downtime) :** Aucune coupure constatée pour les utilisateurs lors de la bascule de l'API.
+*   **Déploiements accélérés et fiabilisés :** L'intégration du pipeline CI/CD sécurise les mises à jour et réduit drastiquement le droit à l'erreur humaine en production.
 *   **Sécurité durcie :** Suppression des mots de passe pour les accès serveurs et isolation complète des bases de données.
-*   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur.
+*   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur en temps réel.
 
 ---
 
