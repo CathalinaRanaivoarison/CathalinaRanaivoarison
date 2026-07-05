@@ -61,14 +61,14 @@ Migration d'infrastructure mobile : transition d'un hébergement mutualisé hist
 ---
 # 💻 Projets
 
-## IC GROUP – Architecture CI/CD & Infrastructure Infrastructure as Code Multi-Serveurs 
+## IC GROUP – Architecture CI/CD & Infrastructure Code Multi-Serveurs 
 
 ### Présentation du Projet
-La société **IC GROUP** a mis en place un site web vitrine (développé en Python/Flask) permettant d'accéder à ses deux applications phares :
-1. **Odoo 13.0 (Communautaire)** : Intégrant un système de LMS pour la diffusion des formations internes.
-2. **pgAdmin4** : Pour l'administration graphique de la base de données PostgreSQL d'Odoo.
+La société **IC GROUP** a mis en place un site web vitrine développé en Python/Flask servant de point d'entrée unique vers ses deux applications d'entreprise stratégiques :
+1. **Odoo 13.0 (Édition Communautaire)** : Configuré et personnalisé avec son module LMS (Learning Management System) pour la gestion et la diffusion des formations internes.
+2. **pgAdmin4** : Déployé pour assurer l'administration graphique et sécurisée de la base de données PostgreSQL d'Odoo.
 
-Conception et automatisation d'une infrastructure d'entreprise conteneurisée pour le déploiement d'un site vitrine connecté à un ERP Odoo 13 (LMS interne) et à une interface d'administration graphique pgAdmin4, répartis sur 3 serveurs distincts.
+L'objectif de ce projet a été de concevoir, provisionner et automatiser une infrastructure d'entreprise conteneurisée hautement disponible. Pour répondre aux besoins d'isolation des charges de travail et de sécurité, la solution est entièrement orchestrée et répartie de manière transparente sur **03 serveurs cloud distincts** (AWS EC2).
 
 ### Réalisations
 * **Infrastructure as Code (IaC) :** Écriture et déploiement de scripts Terraform pour automatiser le provisionnement d'instances AWS EC2 (`t2.medium` et `t2.micro`) et la configuration dynamique des règles de pare-feu (Security Groups).
