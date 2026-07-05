@@ -41,7 +41,6 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 - **Observabilité et Supervision :** Configuration d'une stack Prometheus et Grafana pour le suivi des métriques système en temps réel et la création de dashboards de performance.
 - **Excellence Opérationnelle :** Rédaction de la documentation technique de référence, automatisation des sauvegardes (dumps DB) et définition des procédures opérationnelles de reprise sur sinistre (rollback).
 
-**Tech Stack:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
 ---
 🖼️ [INSÈRE ICI TON SCHÉMA GRAPHIQUE EXCALIDRAW AVEC LES DEUX SERVEURS ET LES TUNNELS]
@@ -57,6 +56,8 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 *   **Déploiements accélérés et fiabilisés :** L'intégration du pipeline CI/CD sécurise les mises à jour et réduit drastiquement le droit à l'erreur humaine en production.
 *   **Sécurité durcie :** Suppression des mots de passe pour les accès serveurs et isolation complète des bases de données.
 *   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur en temps réel.
+
+**Tech Stack:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
 ---
 
