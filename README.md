@@ -97,32 +97,6 @@ L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS
 
 ---
 
-## 💼 Professional Highlights
-
-- Automated infrastructure management for 3,000+ servers using Ansible
-- Built and optimized CI/CD pipelines with GitLab CI and Jenkins
-- Deployed and operated containerized workloads with Docker and Kubernetes
-- Implemented monitoring solutions with Grafana, Prometheus and Zabbix
-- Automated cloud infrastructure provisioning with Terraform and AWS
-
----
-
-### Kubernetes CI/CD Platform
-
-Deployment of containerized applications using Kubernetes, Jenkins and Docker.
-
-**Tech Stack:** Kubernetes, Jenkins, Docker, GitHub Actions
-
----
-
-### Infrastructure Automation
-
-Automation of cloud infrastructure provisioning and configuration.
-
-**Tech Stack:** Terraform, Ansible, AWS
-
----
-
 ### Repositories 🔭
 
 - [Docker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
