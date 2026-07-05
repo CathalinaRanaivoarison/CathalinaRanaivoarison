@@ -41,6 +41,42 @@ Production migration and operation of a Strapi/PostgreSQL platform hosted on OVH
 
 **Tech Stack:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
 
+# 📱 Étude de Cas : Migration Cloud & Sécurisation d'une API Mobile (40k+ Utilisateurs)
+
+## 📌 Présentation du Projet
+Migration réussie d'une infrastructure backend d'un hébergement mutualisé historique (O2Switch) vers un environnement Cloud dédié et conteneurisé (VPS OVH). L'enjeu majeur était d'isoler les environnements de Production/Staging et de sécuriser les accès de l'équipe Data, le tout avec **zéro interruption de service** pour les utilisateurs de l'application mobile.
+
+---
+🖼️ [INSÈRE ICI TON SCHÉMA GRAPHIQUE EXCALIDRAW AVEC LES DEUX SERVEURS ET LES TUNNELS]
+---
+
+## 🎯 Problématiques & Défis Techniques
+*   **Limitation technique :** L'hébergement mutualisé initial limitait la scalabilité et ne permettait pas une isolation propre des environnements.
+*   **Sécurité des données :** L'équipe Data avait besoin d'un accès direct à la base de données pour leurs outils d'analyse (ex: BigQuery) sans pour autant exposer les ports PostgreSQL publiquement sur Internet.
+*   **Continuité d'activité :** Assurer le routage pour l'application mobile tout en maintenant temporairement les e-mails et le site vitrine sur l'ancien hébergeur.
+
+## 🚀 Solutions et Architecture Implémentées
+
+### 1. Conteneurisation et Isolation (Docker)
+Conception d'une architecture multi-conteneurs via **Docker Compose** permettant d'isoler hermétiquement l'environnement de Production et l'environnement de Staging. Chaque environnement possède son instance PostgreSQL et son instance Strapi dédiée.
+
+### 2. Routage et Sécurisation des Flux (Nginx)
+Déploiement d'un reverse proxy **Nginx** faisant office de point d'entrée unique et sécurisé (HTTPS via certificats automatisés **Let's Encrypt**). Nginx intercepte et distribue le trafic vers les bons conteneurs en fonction des sous-domaines.
+
+### 3. Gestion du Routage Hybride (DNS)
+Mise en place d'une transition douce en séparant les flux réseau : le trafic de l'application mobile pointe vers le nouveau VPS OVH, tandis que la vitrine web et la messagerie restent transitoirement gérées par l'ancien hébergeur.
+
+### 4. Accès Data Sécurisé (Tunnel SSH & RBAC)
+Pour ouvrir un accès sécurisé à la Data Team sans compromettre la base de données :
+*   Fermeture complète des ports PostgreSQL sur l'extérieur.
+*   Création d'un utilisateur système dédié, restreint aux **tunnels SSH** avec authentification obligatoire par **clés de sécurité (Ed25519/RSA)**.
+*   Configuration de privilèges stricts au niveau de la base de données (**Lecture seule / RBAC**) limités aux tables strictement nécessaires à l'analyse.
+
+## 📊 Métriques & Impact Business
+*   **100% de disponibilité (Zero-Downtime) :** Aucune coupure constatée pour les utilisateurs lors de la bascule de l'API.
+*   **Sécurité durcie :** Suppression des mots de passe pour les accès serveurs et isolation complète des bases de données.
+*   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur.
+
 ---
 
 ## 💼 Professional Highlights
