@@ -106,10 +106,10 @@ L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS
 - [IC_Project](https://github.com/CathalinaRanaivoarison/IC_Project)
 - [Docker Static Website ](https://github.com/CathalinaRanaivoarison/docker-static-website)
 - [Docker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
-- [Kubernetes Projects](https://github.com/CathalinaRanaivoarison/Kubernetes)
-- [Jenkins CI/CD Pipelines](https://github.com/CathalinaRanaivoarison/Jenkins)
-- [Ansible Automation](https://github.com/CathalinaRanaivoarison/Ansible)
+- [Jenkins CI/CD Pipelines](https://github.com/CathalinaRanaivoarison/flask-jenkins-pipeline)
 - [Terraform AWS Infrastructure](https://github.com/CathalinaRanaivoarison/Terraform)
+- [Ansible Automation](https://github.com/CathalinaRanaivoarison/Ansible)
+- [Kubernetes Projects](https://github.com/CathalinaRanaivoarison/Kubernetes)
 
 ---
 ## 🎓 Certificat
