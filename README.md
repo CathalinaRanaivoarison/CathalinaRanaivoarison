@@ -1,11 +1,11 @@
 ### Cathalina Ranaivoarison
 
 
-### Ingénieur DevOps & Cloud
+### Ingénieure DevOps & Cloud
 
-Ingénieur DevOps & Cloud spécialisé dans l'automatisation d'infrastructures, la CI/CD, Kubernetes, Terraform et AWS.
+Ingénieure DevOps & Cloud spécialisée dans l'automatisation d'infrastructures (Ansible, Terraform), la CI/CD (GitLab CI, Jenkins) et la conteneurisation.
 
-Passionné par la conception de plateformes cloud scalables, l'automatisation des déploiements et l'amélioration de la fiabilité des systèmes grâce aux pratiques DevOps.
+Passionnée par l'industrialisation des déploiements, la fiabilité des systèmes et la transmission des bonnes pratiques DevOps.
 
 ### 🛠️ Tech Stack
 
@@ -24,97 +24,119 @@ Passionné par la conception de plateformes cloud scalables, l'automatisation de
 
 # 💻 Projet 1
 
-## Eiko – Plateforme d'engagement citoyen (40 000+ utilisateurs)
+## Eiko – Application mobile d'engagement citoyen
 
-### Présentation du Projet
-La plateforme citoyenne **Eiko** est une application mobile grand public conçue pour aider les familles et les colocations à adopter des éco-gestes au quotidien, accessible via son site officiel [eiko-responsable.org](https://www.eiko-responsable.org/). Cet écosystème à fort impact s'appuie sur une architecture backend robuste pour propulser ses services stratégiques :
+### Présentation du projet
 
-*   **Strapi CMS :** Déployé comme API Gateway et gestionnaire de contenu pour alimenter en temps réel l'application mobile auprès de plus de **40 000 utilisateurs actifs**.
-*   **PostgreSQL 15 :** Configuré comme moteur de base de données relationnelle centralisé pour stocker de manière intègre et performante les données utilisateurs ainsi que le suivi des challenges applicatifs et environnementaux.
+**Eiko** est une application mobile qui aide les familles et les colocations à adopter des éco-gestes au quotidien ([eiko-responsable.org](https://www.eiko-responsable.org/)). Elle compte aujourd'hui **187 comptes** et s'appuie sur :
 
-L'objectif de ce projet a été de concevoir, migrer et automatiser une infrastructure d'entreprise conteneurisée hautement disponible. Afin de s'affranchir des limitations techniques d'un hébergement mutualisé historique (**O2Switch**), la solution a été entièrement orchestrée et isolée sur un environnement Cloud dédié (**VPS OVH**). L'enjeu majeur résidait dans le cloisonnement strict des environnements de Production et de Staging ainsi que dans la sécurisation des flux de l'équipe Data, le tout opéré de manière transparente avec **zéro interruption de service** (*Zero-Downtime*) pour les utilisateurs mobiles engagés dans la transition écologique.
+* **Strapi :** CMS headless qui expose l'API consommée par l'application mobile.
+* **PostgreSQL 15 :** base de données relationnelle qui stocke les données utilisateurs et le suivi des challenges.
+
+L'objectif était de migrer le backend d'un hébergement mutualisé (**O2Switch**), trop limité, vers un **VPS OVH** dédié, puis de construire une infrastructure conteneurisée, fiable et sécurisée : environnements Production et Staging séparés, déploiements automatisés et accès sécurisés pour l'équipe Data. La bascule s'est faite **sans coupure de service** pour les utilisateurs.
 
 ### Réalisations
 
-- **Migration sans interruption (Zero-Downtime) :** Migration des charges de travail backend depuis un hébergement mutualisé (O2Switch) vers un VPS dédié OVH, opérée sans aucune coupure de l'API ni dégradation de l'expérience utilisateur sur mobile.
-- **Conteneurisation et Isolation :** Conception, déploiement et isolation complète des environnements de Production et de Staging via Docker Compose et un reverse proxy Nginx sécurisé (certificats SSL automatisés Let's Encrypt).
-- **Automatisation & CI/CD :** Conception et mise en œuvre de pipelines d'intégration et de déploiement continus (CI/CD) pour automatiser les flux de travail opérationnels, les déploiements de l'API et la gestion des builds.
-- **Sécurisation des accès Data :** Mise en place d'un accès sécurisé par tunnels SSH (authentification par clés Ed25519/RSA sans mot de passe) combiné à un contrôle d'accès basé sur les rôles (RBAC) PostgreSQL pour fournir à l'équipe Data un accès strict en lecture seule au niveau des tables.
-- **Observabilité et Supervision :** Configuration d'une stack Prometheus et Grafana pour le suivi des métriques système en temps réel et la création de dashboards de performance.
-- **Excellence Opérationnelle :** Rédaction de la documentation technique de référence, automatisation des sauvegardes (dumps DB) et définition des procédures opérationnelles de reprise sur sinistre (rollback).
+- **Migration sans interruption :** bascule du backend Strapi et de la base PostgreSQL d'O2Switch vers un VPS OVH, sans coupure de l'API pour les utilisateurs mobiles.
+- **Conteneurisation et séparation des environnements :** Production et Staging isolés avec Docker Compose, derrière un reverse proxy Nginx avec certificats SSL/TLS Let's Encrypt renouvelés automatiquement.
+- **Pipeline CI/CD GitLab :** tests, build et déploiement, avec déploiement automatique en Staging et en Production à la demande.
+- **Sécurisation des accès à la base :** accès via tunnels SSH (authentification par clés, sans mot de passe), aucun port PostgreSQL exposé sur Internet, comptes en lecture seule et séparation des droits pour l'équipe Data.
+- **Supervision adaptée à une petite équipe :** disponibilité et expiration des certificats (UptimeRobot), ressources du serveur (Beszel), surveillance des tâches planifiées (Healthchecks.io), alertes centralisées sur Discord.
+- **Exploitation et documentation :** sauvegardes automatisées de la base, procédure de retour arrière, documentation d'architecture et procédures pour l'onboarding des équipes.
+- **Plan de sortie de l'ancien hébergeur :** audit des DNS, domaines, messagerie et services hérités.
 
 ### Architecture
 
-![Schéma d'Architecture](Architecture.png)
+![Schéma d'architecture](Architecture.png)
 
-### Problématiques & Défis Techniques
+### Problématiques et défis techniques
 
-*   **Limitation technique :** L'hébergement mutualisé initial limitait la scalabilité et ne permettait pas une isolation propre des environnements.
-*   **Sécurité des données :** L'équipe Data avait besoin d'un accès direct à la base de données pour leurs outils d'analyse (ex: BigQuery) sans pour autant exposer les ports PostgreSQL publiquement sur Internet.
-*   **Continuité d'activité :** Assurer le routage pour l'application mobile tout en maintenant temporairement les e-mails et le site vitrine sur l'ancien hébergeur.(Migration total à venir)
+* **Limites de l'hébergement mutualisé :** pas d'isolation possible entre environnements et peu de contrôle sur le serveur.
+* **Sécurité des données :** l'équipe Data avait besoin d'accéder à la base depuis ses outils d'analyse, sans exposer PostgreSQL publiquement.
+* **Continuité de service :** basculer l'API de l'application mobile tout en maintenant temporairement la messagerie et le site vitrine chez l'ancien hébergeur (migration complète à venir).
 
-### Métriques & Impact Business
+### Résultats
 
-*   **100% de disponibilité (Zero-Downtime) :** Aucune coupure constatée pour les utilisateurs lors de la bascule de l'API.
-*   **Déploiements accélérés et fiabilisés :** L'intégration du pipeline CI/CD sécurise les mises à jour et réduit drastiquement le droit à l'erreur humaine en production.
-*   **Sécurité durcie :** Suppression des mots de passe pour les accès serveurs et isolation complète des bases de données.
-*   **Observabilité :** Intégration d'une stack de supervision (Prometheus/Grafana) pour suivre l'état de santé du serveur en temps réel.
+* **Aucune coupure constatée** pour les utilisateurs pendant la bascule de l'API.
+* **Déploiements fiabilisés :** le pipeline CI/CD supprime les manipulations manuelles et limite les erreurs en production.
+* **Sécurité renforcée :** plus de mot de passe pour les accès serveur, base de données non exposée, droits séparés.
+* **Visibilité sur l'état du service :** alertes en temps réel sur la disponibilité, les certificats, les ressources et les tâches planifiées.
 
-**Tech Stack du projet:** Docker • PostgreSQL • Strapi • Nginx • Grafana • Prometheus • Linux • Git • DNS
+**Tech Stack du projet :** Docker • Docker Compose • PostgreSQL • Strapi • Nginx • GitLab CI • Linux • SSH • Git • DNS • OVH
 
 ---
 # 💻 Projet 2 [IC_Project](https://github.com/CathalinaRanaivoarison/IC_Project)
 
-## IC GROUP – Architecture CI/CD & Infrastructure Code Multi-Serveurs 
+## IC GROUP – Chaîne CI/CD Jenkins et Infrastructure as Code sur AWS
 
-### Présentation du Projet
-La société **IC GROUP** a mis en place un site web vitrine développé en Python/Flask servant de point d'entrée unique vers ses deux applications d'entreprise stratégiques :
-1. **Odoo 13.0 (Édition Communautaire)** : Configuré et personnalisé avec son module LMS (Learning Management System) pour la gestion et la diffusion des formations internes.
-2. **pgAdmin4** : Déployé pour assurer l'administration graphique et sécurisée de la base de données PostgreSQL d'Odoo.
+### Présentation du projet
 
-L'objectif de ce projet a été de concevoir, provisionner et automatiser une infrastructure d'entreprise conteneurisée hautement disponible. Pour répondre aux besoins d'isolation des charges de travail et de sécurité, la solution est entièrement orchestrée et répartie de manière transparente sur **03 serveurs cloud distincts** (AWS EC2).
+**IC GROUP** dispose d'un site vitrine en Python/Flask qui sert de point d'entrée vers deux applications internes :
+
+1. **Odoo 13.0 (Community)** : ERP configuré avec son module LMS (Learning Management System) pour la gestion des formations internes.
+2. **pgAdmin4** : interface d'administration de la base PostgreSQL d'Odoo.
+
+L'objectif était de provisionner l'infrastructure sur AWS avec Terraform, d'automatiser l'installation et le déploiement des applications avec Ansible, et d'orchestrer l'ensemble dans un pipeline Jenkins : build, tests, publication de l'image et déploiement. Les applications sont réparties sur **3 instances EC2** pour séparer les charges.
 
 ### Réalisations
-* **Infrastructure as Code (IaC) :** Écriture et déploiement de scripts Terraform pour automatiser le provisionnement d'instances AWS EC2 (`t2.medium` et `t2.micro`) et la configuration dynamique des règles de pare-feu (Security Groups).
-* **Gestion de Configuration et Provisioning :** Création de playbooks Ansible pour automatiser l'installation complète de l'écosystème Docker/Docker Compose sur des instances vierges.
-* **Industrialisation par Rôles Ansible :** Modélisation de rôles Ansible hautement réutilisables (`odoo_role` et `pgadmin_role`) s'appuyant sur des templates Docker Compose configurés dynamiquement avec Jinja2 (volumes persistants, isolation réseau et services configurables).
-* **Conteneurisation et Scripting Avancé :** Optimisation d'un Dockerfile Python/Flask utilisant des variables d'environnement dynamiques extraites à la volée via des scripts Linux (`awk`) à partir d'un fichier de configuration centralisé (`releases.txt`).
-* **Pipeline CI/CD Unifié (Jenkins) :** Conception d'un pipeline complet structuré en étapes (Extraction, Multi-Build avec arguments, Tests fonctionnels automatisés via curl/inspect, Push Docker Hub et Déploiement automatique via Ansible).
+
+* **Infrastructure as Code (Terraform) :** provisionnement du réseau (VPC, subnet), de 3 instances EC2 (`t3.small` pour Jenkins, `t3.micro` pour les applications), d'un Security Group par serveur et de la paire de clés SSH. L'image Ubuntu 22.04 LTS la plus récente est sélectionnée automatiquement depuis l'éditeur officiel (Canonical), sans identifiant d'AMI codé en dur.
+* **Provisioning (Ansible) :** playbook d'installation de Docker et Docker Compose sur des instances vierges (`provision.yml`), playbook de déploiement des applications (`deploy.yml`) et inventaire des serveurs.
+* **Rôles Ansible réutilisables :** `odoo_role` et `pgadmin_role` (structure `defaults` / `tasks` / `templates`), qui génèrent les fichiers Docker Compose à partir de templates Jinja2 : volumes persistants, réseaux et noms de services paramétrables.
+* **Conteneurisation :** Dockerfile de l'application Flask. Les URLs d'Odoo et de pgAdmin sont passées par variables d'environnement (`ODOO_URL`, `PGADMIN_URL`), et la version est extraite avec `awk` d'un fichier de configuration central (`releases.txt`).
+* **Pipeline CI/CD Jenkins déclaratif (Jenkinsfile) :**
+  1. **Lecture de `releases.txt`** : version et URLs extraites avec `awk`, arrêt du pipeline si une valeur manque.
+  2. **Qualité du code** : analyse du Dockerfile (Hadolint) et du code Python (Flake8).
+  3. **Build de l'image** avec Docker Buildx et arguments de build (version, URLs).
+  4. **Tests** : lancement du conteneur dans un réseau Docker dédié, test HTTP avec `curl` (plusieurs tentatives) et vérification du contenu de la page.
+  5. **Publication** sur Docker Hub d'une image multi-architecture (`linux/amd64`, `linux/arm64`), taguée avec la version.
+  6. **Déploiement Ansible** conditionné par un paramètre du pipeline et bloqué si des URLs de démonstration sont encore présentes.
+* **Gestion des secrets :** identifiants Docker Hub, clé SSH, inventaire et mot de passe Ansible Vault stockés dans les credentials Jenkins. Fichiers temporaires supprimés automatiquement en fin d'étape.
 
 ### Architecture
-L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS :
-* **Serveur 1 (t2.medium)** : Dédié à l'orchestration CI/CD avec **Jenkins**.
-* **Serveur 2 (t2.micro)** : Héberge l'application web **Site Vitrine** (port 8080) et **pgAdmin4** (port 5050).
-* **Serveur 3 (t2.micro)** : Héberge l'application **Odoo 13.0** et sa base de données **PostgreSQL** (port 8069).
 
-### Problématiques & Défis Techniques
-* **Isolation et Optimisation des Ressources :** Odoo et PostgreSQL étant gourmands en ressources, le défi consistait à isoler l'ERP sur un serveur dédié tout en maintenant le site vitrine et pgAdmin sur une autre instance pour garantir la haute disponibilité du site institutionnel.
-* **Dynamisation des Déploiements :** Permettre aux équipes produit de modifier les URLs de redirection ou la version de l'application sans jamais toucher au code source ou perturber la configuration réseau.
-* **Stratégie Multi-Environnement :** Assurer la portabilité totale des recettes de déploiement Ansible afin de pouvoir basculer l'infrastructure d'un environnement Cloud (AWS EC2) vers du On-Premises sans modifier la logique des rôles.
+L'infrastructure est répartie sur **3 instances EC2** :
 
-### Métriques & Impact Business
-* **Automatisation à 100% (Zero-Human-Error) :** Le provisioning complet (de la machine vide à l'application fonctionnelle) s'exécute de manière idempotente sans aucune action manuelle.
-* **Livraison Continue Sécurisée :** Intégration de tests de validation (Health Checks HTTP et validation d'environnement) bloquant automatiquement le pipeline et empêchant l'application de passer en production en cas de crash.
-* **Flexibilité Commerciale :** Réduction drastique du "Time-to-Market" pour le déploiement de nouvelles versions applicatives (v1.0 à v1.1) simplement en poussant un tag textuel.
+* **Serveur 1 (t3.small) :** Jenkins, pour l'orchestration CI/CD.
+* **Serveur 2 (t3.micro) :** site vitrine (port 8080) et pgAdmin4 (port 5050).
+* **Serveur 3 (t3.micro) :** Odoo 13.0 (port 8069) et sa base PostgreSQL.
 
-**Tech Stack du projet :** AWS EC2 • Terraform • Ansible • Jenkins • Docker • Docker Compose • Python (Flask) • Odoo 13 • pgAdmin4 • Linux (Bash/Awk) • Git
+Les 3 instances tournent sous Ubuntu 22.04 LTS, dans un même subnet, chacune avec son propre Security Group.
+
+### Problématiques et défis techniques
+
+* **Séparation des charges :** Odoo et PostgreSQL consomment beaucoup de ressources. Les isoler sur un serveur dédié évite qu'ils dégradent le site vitrine et pgAdmin.
+* **Déploiements paramétrables :** pouvoir changer les URLs de redirection ou la version de l'application en modifiant uniquement `releases.txt`, sans toucher au code source.
+* **Portabilité :** rôles Ansible indépendants du fournisseur cloud, réutilisables sur d'autres serveurs Linux (on-premise par exemple) en changeant seulement l'inventaire et les variables.
+
+### Résultats
+
+* **Déploiement entièrement automatisé :** d'une instance vierge à l'application fonctionnelle, sans action manuelle, avec des playbooks idempotents (relançables sans effet de bord).
+* **Contrôle qualité dans le pipeline :** si l'analyse du code ou les tests échouent (application qui ne répond pas, contenu attendu absent, valeur manquante dans `releases.txt`), le pipeline s'arrête avant la publication et le déploiement.
+* **Aucun secret dans le code :** tous les accès passent par les credentials Jenkins et Ansible Vault.
+* **Nouvelle version en une modification :** passer de la v1.0 à la v1.1 se fait en changeant la version dans `releases.txt` puis en relançant le pipeline.
+
+### Évolutions prévues
+
+* Déploiement d'Odoo, PostgreSQL et pgAdmin sur un cluster Kubernetes (Minikube).
+
+**Tech Stack du projet :** AWS EC2 • Terraform • Ansible • Ansible Vault • Jenkins • Docker Buildx • Hadolint • Flake8 • Docker • Docker Compose • Python (Flask) • Odoo 13 • PostgreSQL • pgAdmin4 • Linux (Bash/Awk) • Git
 
 ---
 
-## Repositories 🔭
-
+## 🔭 Dépôts GitHub
+- [Jenkins CI/CD Pipelines](https://github.com/CathalinaRanaivoarison/flask-jenkins-pipeline)
 - [IC_Project](https://github.com/CathalinaRanaivoarison/IC_Project)
 - [Docker Static Website ](https://github.com/CathalinaRanaivoarison/docker-static-website)
 - [Docker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
-- [Jenkins CI/CD Pipelines](https://github.com/CathalinaRanaivoarison/flask-jenkins-pipeline)
 - [Terraform AWS Infrastructure](https://github.com/CathalinaRanaivoarison/Terraform)
 - [Ansible Automation](https://github.com/CathalinaRanaivoarison/Ansible)
 - [Kubernetes Projects](https://github.com/CathalinaRanaivoarison/Kubernetes)
 
 ---
-## 🎓 Certificat
+## 🎓 certifications
 
-- AWS Certified DevOps Engineer – Professional (in progress)
+- AWS Solutions Architect – Associate (in progress)
 - Certified Kubernetes Administrator (CKA) (in progress)
 
 ---
@@ -129,9 +151,11 @@ L'infrastructure est segmentée sur **03 serveurs distincts** déployés sur AWS
 
 ---
 
-##  Fun Fact
+##  Ce qui me motive
 
-I enjoy building automated cloud infrastructures and transforming manual operations into reliable CI/CD pipelines.
+Transformer des opérations manuelles en déploiements automatisés et fiables.
+
+
 
 
 
