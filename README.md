@@ -129,9 +129,6 @@ Les 3 instances tournent sous Ubuntu 22.04 LTS, dans un même subnet, chacune av
 - [IC_Project](https://github.com/CathalinaRanaivoarison/IC_Project)
 - [Docker Static Website ](https://github.com/CathalinaRanaivoarison/docker-static-website)
 - [Docker Deployments](https://github.com/CathalinaRanaivoarison/Docker)
-- [Terraform AWS Infrastructure](https://github.com/CathalinaRanaivoarison/Terraform)
-- [Ansible Automation](https://github.com/CathalinaRanaivoarison/Ansible)
-- [Kubernetes Projects](https://github.com/CathalinaRanaivoarison/Kubernetes)
 
 ---
 ## 🎓 certifications
